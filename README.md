@@ -11,3 +11,9 @@ Sorting Algorithms
 Searching Algorithms
 =====================================
 1. Binary Search
+
+
+Miscellaneous
+=====================================
+1. **Divide Array**: To get equal no of True and False
+2. **Bitonic Array** : To find the position where the array is strictly decreasing after strictly increasing from beginning
