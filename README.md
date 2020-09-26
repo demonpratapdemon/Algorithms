@@ -17,3 +17,4 @@ Miscellaneous
 =====================================
 1. **Divide Array**: To get equal no of True and False
 2. **Bitonic Array** : To find the position where the array is strictly decreasing after strictly increasing from beginning
+3. **K-Nearest Neighbours** : To find k-nearest neighbours in an array
