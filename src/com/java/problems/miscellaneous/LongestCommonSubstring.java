@@ -15,12 +15,17 @@ import java.util.LinkedList;
  */
 public class LongestCommonSubstring {
 
-	static HashMap<Integer, LinkedList<Integer>> hashTable;
+	// Creating hash-table to keep track of index and hash values
+	static HashMap<Integer, LinkedList<Integer>> hashTable = new HashMap<Integer, LinkedList<Integer>>();
+	// For keeping track of the longest common substring
 	static String commonSubstring = "";
 
 	/**
 	 * @param args
 	 * @throws IOException
+	 * 
+	 * We are using Rolling Hashing and Binary Search for finding Longest Common Substring
+	 * Time Complexity = O(nlogn)
 	 */
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
@@ -32,12 +37,20 @@ public class LongestCommonSubstring {
 		binarySearch(str1, str2);
 	}
 
+	/*
+	 * Time Complexity = O(logn) // where n is the length of the smallest string
+	 */
 	private static void binarySearch(String str1, String str2) {
 		// TODO Auto-generated method stub
+		// Let str1 be of length n and str2 be of length m.
+		// We will apply binary search here.
+		// If there is a common substring of length x between str1 and str2, then there
+		// definitely exist another substring which is of length less than x.
+		// But there may not exist a substring whose length is greater than x.
 		int left = 0;
 		int right = Math.min(str1.length(), str2.length());
 		while (left <= right) {
-			int mid = left + (right - left) / 2;
+			int mid = (right + left) / 2;
 			if (rollingHash(str1, str2, mid)) {
 				left = mid + 1;
 			} else {
@@ -48,23 +61,25 @@ public class LongestCommonSubstring {
 		System.out.println("Longest common substring = " + commonSubstring);
 	}
 
+	/*
+	 * Time Complexity(in Average Case) = Theta(n)
+	 */
 	private static boolean rollingHash(String str1, String str2, int m) {
 		// TODO Auto-generated method stub
 		boolean flag = false;
-		hashTable = new HashMap<Integer, LinkedList<Integer>>();
-		int p = 0, t = 0, b = 31; // p = for str2, t = for str1, b = base
-		int power = 1;
+		int p = 0, t = 0, b = 31; // p = hash value for str2, t = hash value for str1, b = considering base as 31
+		int power = 1; // we need this power for subtraction
 		int q = (int) (1e9 + 9); // for modulus
 		int i = 0;
 		for (; i < m; i++) {
 			t = (t * b + (str1.charAt(i) - 'a' + 1)) % q;
 			p = (p * b + (str2.charAt(i) - 'a' + 1)) % q;
-			power = (power * b) % q; // to keep the power for subtraction later
+			power = (power * b) % q; // scaling the power for subtraction later
 		}
 		if (!hashTable.containsKey(t)) { // adding the first hash value to the has table
 			LinkedList<Integer> ll = new LinkedList<Integer>();
-			ll.addFirst(i - m);
-			hashTable.put(t, ll);
+			ll.addFirst(i - m); // adding the index of the substring to the linked list
+			hashTable.put(t, ll); // storing the index of the substring
 		}
 		int j = i;
 		for (; i < str1.length(); i++) {
@@ -77,8 +92,10 @@ public class LongestCommonSubstring {
 				hashTable.get(t).addFirst(i - m);
 			}
 		}
-		// all substrings of str1 which are of length m has been hashed in the hash
+		// All substrings of str1 which are of length m has been hashed in the hash
 		// table.
+		// Now we need to look for all the substrings of length m in str2 and find the
+		// hash value in the hash-table
 		while (j < str2.length() && !flag) {
 			if (hashTable.containsKey(p)) {
 				LinkedList<Integer> matchedHash = hashTable.get(p);
@@ -94,7 +111,8 @@ public class LongestCommonSubstring {
 			getCommonSubString(str1, str2, matchedHash, m, j - m);
 			flag = true;
 		}
-		hashTable.clear();
+		hashTable.clear(); // clearing the hash-table for computing the next iteration with different
+							// length
 		return flag;
 	}
 
@@ -116,4 +134,4 @@ public class LongestCommonSubstring {
 		}
 	}
 
-};
+}
