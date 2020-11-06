@@ -13,11 +13,11 @@ Sorting Algorithms
 Sorting Algorithms
 =====================================
 **Binary Heap**
-	a. Build Min Heap
+	**[a. Build Min Heap
 	b. TopDown Heapify
 	c. BottomUp Heapify
 	d. Insert in Heap
-	e. DeleteMin
+	e. DeleteMin]**
 
 Searching Algorithms
 =====================================
