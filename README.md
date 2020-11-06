@@ -13,12 +13,12 @@ Sorting Algorithms
 Data Structure
 =====================================
 **Binary Heap**
-	**[1. Build Min Heap
-	2. TopDown Heapify
-	3. BottomUp Heapify
-	4. Insert in Heap
-	5. DeleteMin
-	6. Increase Key
+	**[1. Build Min Heap,
+	2. TopDown Heapify,
+	3. BottomUp Heapify,
+	4. Insert in Heap,
+	5. DeleteMin,
+	6. Increase Key,
 	7. Decrease Key]**
 
 Searching Algorithms
