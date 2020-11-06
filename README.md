@@ -10,7 +10,7 @@ Sorting Algorithms
 5. **Randomized Quick Sort**
 6. **Heap Sort**
 
-Sorting Algorithms
+Data Structure
 =====================================
 **Binary Heap**
 	**[a. Build Min Heap
