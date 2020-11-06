@@ -8,6 +8,16 @@ Sorting Algorithms
 3. **Insertion Sort**
 4. **Merge Sort**
 5. **Randomized Quick Sort**
+6. **Heap Sort**
+
+Sorting Algorithms
+=====================================
+**Binary Heap**
+	a. Build Min Heap
+	b. TopDown Heapify
+	c. BottomUp Heapify
+	d. Insert in Heap
+	e. DeleteMin
 
 Searching Algorithms
 =====================================

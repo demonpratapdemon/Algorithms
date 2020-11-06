@@ -6,6 +6,7 @@ package com.java.problems.util;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 
 /**
  * @author PRATAP
@@ -25,9 +26,17 @@ public class Utility {
 	}
 
 	public static void printNumbers(int[] arr) {
-		System.out.print("The array after sorting : ");
+		System.out.print("The array is : ");
 		for (int i : arr) {
 			System.out.print(i + " ");
 		}
+		System.out.println();
+	}
+
+	public static void printNumbers(ArrayList<Integer> heap) {
+		// TODO Auto-generated method stub
+		for (Integer i : heap)
+			System.out.print(i + " ");
+		System.out.println();
 	}
 }
