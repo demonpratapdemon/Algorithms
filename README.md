@@ -7,6 +7,7 @@ Sorting Algorithms
 2. **Selection Sort**
 3. **Insertion Sort**
 4. **Merge Sort**
+5. **Randomized Quick Sort**
 
 Searching Algorithms
 =====================================

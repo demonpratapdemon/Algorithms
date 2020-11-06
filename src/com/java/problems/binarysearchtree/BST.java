@@ -42,7 +42,7 @@ public class BST {
 			int min = findMin(lca, a); // minimum exists on the LST of LCA(inclusive)[since a <= b]
 			System.out.println("Minimum = " + min);
 		} else {
-			System.out.println("No path exist between the given nodes or enter correct order of nodes");
+			System.out.println("No path exist between the given nodes or enter correct order of nodes.Hence : -1");
 		}
 	}
 
