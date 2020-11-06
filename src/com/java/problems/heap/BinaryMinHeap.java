@@ -36,6 +36,8 @@ public class BinaryMinHeap {
 			System.out.println("Enter 1 to insert element into Binary Min Heap");
 			System.out.println("Enter 2 to display Min Heap");
 			System.out.println("Enter 3 to Delete Min");
+			System.out.println("Enter 4 to Decrease Key");
+			System.out.println("Enter 5 to increase Key");
 			int choice = Integer.parseInt(br.readLine());
 			switch (choice) {
 			case 1: {
@@ -51,6 +53,22 @@ public class BinaryMinHeap {
 				int deleted = deleteMin(heap, n);
 				n--;
 				System.out.println("Min element is : " + deleted);
+				break;
+			case 4:
+				System.out.println("Enter the index of the element whose key is to be decrease");
+				int index = Integer.parseInt(br.readLine()) - 1;
+				System.out.println("Enter the new value");
+				int newVal = Integer.parseInt(br.readLine());
+				heap.set(index, newVal);
+				bottomUpHeapify(heap, index);
+				break;
+			case 5:
+				System.out.println("Enter the index of the element whose key is to be decrease");
+				index = Integer.parseInt(br.readLine()) - 1;
+				System.out.println("Enter the new value");
+				newVal = Integer.parseInt(br.readLine());
+				heap.set(index, newVal);
+				topDownHeapify(heap, index, n);
 				break;
 			default:
 				System.exit(0);
