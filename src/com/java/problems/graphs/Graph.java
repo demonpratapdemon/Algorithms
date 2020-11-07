@@ -43,6 +43,7 @@ public class Graph {
 		}
 		while (true) {
 			System.out.println("Enter 1 for BFS Traversal");
+			System.out.println("Enter 2 for DFS Traversal");
 			System.out.print("Enter your choice : ");
 			int choice = Integer.parseInt(br.readLine());
 			System.out.println();
@@ -53,6 +54,13 @@ public class Graph {
 				StringBuilder bfsTree = BFS.bfsTraversal(list, source);
 				if (bfsTree != null)
 					System.out.println("BFS Traversal is : " + bfsTree);
+				break;
+			case 2:
+				System.out.println("Enter the source vertex : ");
+				source = Integer.parseInt(br.readLine());
+				StringBuilder dfsTree = DFS.dfsTraversal(list, source);
+				if (dfsTree != null)
+					System.out.println("BFS Traversal is : " + dfsTree);
 				break;
 			default:
 				System.exit(0);

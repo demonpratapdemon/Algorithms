@@ -26,6 +26,7 @@ Data Structure
 =====================================
 	1. Adjacency List Representation
 	2. Breadth First Search(BFS)
+	3. Depth First Search(DFS)
 
 Searching Algorithms
 =====================================
