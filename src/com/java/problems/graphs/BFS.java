@@ -15,10 +15,10 @@ import com.java.problems.entity.GraphNodes;
  */
 public class BFS {
 
-	public static void bfsTraversal(ArrayList<ArrayList<GraphNodes>> list, int source) {
+	public static StringBuilder bfsTraversal(ArrayList<ArrayList<GraphNodes>> list, int source) {
 		// TODO Auto-generated method stub
 		if (list.size() <= 0)
-			return;
+			return null;
 		Queue<Integer> queue = new LinkedList<Integer>();
 		int n = list.size(); // no of nodes
 		boolean[] v = new boolean[n]; // to keep track of visited nodes
@@ -44,6 +44,6 @@ public class BFS {
 				}
 			}
 		}
-		System.out.println(bfsTree);
+		return bfsTree;
 	}
 }
