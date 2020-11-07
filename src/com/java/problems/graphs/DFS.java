@@ -27,6 +27,7 @@ public class DFS {
 			v[i] = false;
 		}
 		stack.push(source);
+		phi[source] = -1;
 		int u;
 		StringBuilder dfsTree = new StringBuilder();
 		while (!stack.isEmpty()) {
