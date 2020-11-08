@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 import com.java.problems.entity.GraphNodes;
+import com.java.problems.graphs.shortestpath.Dijkstra;
 
 /**
  * @author PRATAP
@@ -44,6 +45,7 @@ public class Graph {
 		while (true) {
 			System.out.println("Enter 1 for BFS Traversal");
 			System.out.println("Enter 2 for DFS Traversal");
+			System.out.println("Enter 3 for finding Shortest Path using Dijkstra's Algorithm");
 			System.out.print("Enter your choice : ");
 			int choice = Integer.parseInt(br.readLine());
 			System.out.println();
@@ -61,6 +63,12 @@ public class Graph {
 				StringBuilder dfsTree = DFS.dfsTraversal(list, source);
 				if (dfsTree != null)
 					System.out.println("BFS Traversal is : " + dfsTree);
+				break;
+			case 3:
+				System.out.println("Enter the source vertex : ");
+				source = Integer.parseInt(br.readLine());
+				StringBuilder shortestPath = Dijkstra.shortestPathUsingDikstra(list, source);
+				System.out.println("The shortest path is : " + shortestPath);
 				break;
 			default:
 				System.exit(0);

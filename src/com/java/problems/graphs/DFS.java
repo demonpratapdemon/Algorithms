@@ -24,7 +24,6 @@ public class DFS {
 		int[] phi = new int[n]; // to keep track which node discovered the current node
 		for (int i = 0; i < n; i++) {
 			phi[i] = -2;
-			v[i] = false;
 		}
 		stack.push(source);
 		phi[source] = -1;

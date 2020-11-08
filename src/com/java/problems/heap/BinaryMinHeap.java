@@ -55,7 +55,7 @@ public class BinaryMinHeap {
 				System.out.println("Min element is : " + deleted);
 				break;
 			case 4:
-				System.out.println("Enter the index of the element whose key is to be decrease");
+				System.out.println("Enter the index of the element whose key is to be decreased");
 				int index = Integer.parseInt(br.readLine()) - 1;
 				System.out.println("Enter the new value");
 				int newVal = Integer.parseInt(br.readLine());
@@ -63,7 +63,7 @@ public class BinaryMinHeap {
 				bottomUpHeapify(heap, index);
 				break;
 			case 5:
-				System.out.println("Enter the index of the element whose key is to be decrease");
+				System.out.println("Enter the index of the element whose key is to be increased");
 				index = Integer.parseInt(br.readLine()) - 1;
 				System.out.println("Enter the new value");
 				newVal = Integer.parseInt(br.readLine());
