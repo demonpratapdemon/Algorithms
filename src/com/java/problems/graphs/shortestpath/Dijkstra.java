@@ -20,8 +20,8 @@ public class Dijkstra {
 			return null;
 		ArrayList<GraphNodePriority> heap = new ArrayList<GraphNodePriority>();
 		int n = list.size();
-		int[] D = new int[n];
-		int[] A = new int[n];
+		int[] D = new int[n];// to keep track of the scores
+		int[] A = new int[n]; // to keep track of the position of the nodes in the heap
 		int k = n - 1; // to keep track for min heap
 		int[] phi = new int[n]; // this is to keep track of which node discovered the current node
 		boolean[] v = new boolean[n]; // this is to keep track whether the node has been visited or not
@@ -61,7 +61,6 @@ public class Dijkstra {
 		// TODO Auto-generated method stub
 		GraphNodePriority node = heap.get(0);
 		swap(heap, a, 0, j);
-//		heap.remove(heap.size() - 1)
 		topDownHeapify(heap, a, 0, j - 1);
 		if (j < 0)
 			return null;
