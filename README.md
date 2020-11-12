@@ -42,3 +42,5 @@ Miscellaneous
 4. **Longest Common Substring** : Finding Longest Common Substring using Rabin-Karp algorithm and Rolling-Hashing
 5. **Maximum & Minimum No b/w 2 nodes in BST** : Finding the maximum and minimum number between 2 nodes of BST if there exists a unique path using LCA(Least Common Ancestor)
 6. **Costly Phone Number** : https://www.hackerearth.com/practice/algorithms/graphs/shortest-path-algorithms/practice-problems/algorithm/costly-phone-number-december-easy-easy-medium/description/
+7. **Coloring Trees** : https://www.hackerearth.com/practice/algorithms/graphs/graph-representation/practice-problems/algorithm/coloring-the-tree-7e8a557a/
+
