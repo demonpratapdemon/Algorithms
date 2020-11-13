@@ -44,4 +44,4 @@ Miscellaneous
 6. **Costly Phone Number** : https://www.hackerearth.com/practice/algorithms/graphs/shortest-path-algorithms/practice-problems/algorithm/costly-phone-number-december-easy-easy-medium/description/
 7. **Coloring Trees** : https://www.hackerearth.com/practice/algorithms/graphs/graph-representation/practice-problems/algorithm/coloring-the-tree-7e8a557a/
 8. **Course Schedule II** : https://leetcode.com/problems/course-schedule-ii/submissions/
-
+9. **Number of Operations to Make Network Connected** : https://leetcode.com/problems/number-of-operations-to-make-network-connected/
