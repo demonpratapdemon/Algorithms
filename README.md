@@ -46,4 +46,5 @@ Miscellaneous
 8. **Course Schedule II** : https://leetcode.com/problems/course-schedule-ii/submissions/
 9. **Number of Operations to Make Network Connected** : https://leetcode.com/problems/number-of-operations-to-make-network-connected/
 10. **Longest Happy String** : https://leetcode.com/problems/longest-happy-string/
-111 **Yet Another Array Problem!** : https://www.hackerearth.com/practice/algorithms/greedy/basics-of-greedy-algorithms/practice-problems/algorithm/yet-another-array-problem-2/description/
+11. **Yet Another Array Problem!** : https://www.hackerearth.com/practice/algorithms/greedy/basics-of-greedy-algorithms/practice-problems/algorithm/yet-another-array-problem-2/description/
+12. **Possible Sums** : https://www.hackerearth.com/practice/algorithms/dynamic-programming/2-dimensional/practice-problems/algorithm/possible-sums-5/description/
